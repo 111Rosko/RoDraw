@@ -1,0 +1,5 @@
+PyQt6>=6.5
+pillow>=10.0
+pyinstaller>=6.0
+# The smoke test asks Windows what windows the built exe put on screen.
+pywin32>=306

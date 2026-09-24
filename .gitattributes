@@ -1,0 +1,7 @@
+# Keep line endings from churning between machines. Git stores LF and
+# hands Windows CRLF where it matters.
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.iss text eol=crlf
+*.ico binary
+*.png binary

@@ -1,0 +1,54 @@
+# Builds the installer and the portable archive when a version tag is pushed,
+# and attaches both to a GitHub release.
+#
+#     git tag v1.3.2
+#     git push origin v1.3.2
+#
+# Building in the open like this is also what a free code-signing certificate
+# from SignPath asks for: they sign what a public, reproducible pipeline
+# produced, not a file uploaded from somebody's desk.
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:      # lets you run it by hand from the Actions tab
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install the dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Inno Setup
+        run: choco install innosetup --no-progress -y
+
+      - name: Build
+        run: powershell -ExecutionPolicy Bypass -File build\build.ps1
+
+      - name: Checksums
+        run: Get-ChildItem installer\Output | Get-FileHash -Algorithm SHA256 | Format-List
+
+      - name: Keep the files even if no release is made
+        uses: actions/upload-artifact@v4
+        with:
+          name: RoDraw
+          path: installer/Output/*
+
+      - name: Attach them to the release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: installer/Output/*
+          generate_release_notes: true

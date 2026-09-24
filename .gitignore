@@ -1,0 +1,33 @@
+# Everything below is produced from the source by build\build.ps1, so it has
+# no business in the repository -- it is roughly 160 MB of it.
+
+# The packaged application
+/dist/
+
+# PyInstaller's scratch space (the .spec and version_info.txt beside it are
+# source and do belong here)
+/build/work/
+
+# The installer and the portable archive
+/installer/Output/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Drafts for the shop page and the forum post. They are notes in your own
+# voice rather than part of the program, so they stay on your machine.
+/itch-page.md
+/reddit-post.md
