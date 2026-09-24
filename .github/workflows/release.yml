@@ -15,6 +15,11 @@ on:
       - "v*"
   workflow_dispatch:      # lets you run it by hand from the Actions tab
 
+# A new repository gives its workflows read-only access, so creating a
+# release is refused. Everything else here only reads.
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: windows-latest
