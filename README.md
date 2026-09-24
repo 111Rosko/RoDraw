@@ -326,6 +326,19 @@ against a black background simply eats the head — so a thin white rim is
 painted back over the edge. That is why the beard and the inked tip have a
 bright outline.
 
+## Downloads and code signing
+
+Built releases are on the
+[releases page](https://github.com/111Rosko/RoDraw/releases), produced by the
+GitHub Actions workflow in this repository from the source you can read here.
+
+Free code signing is provided by [SignPath.io](https://signpath.io),
+certificate by the [SignPath Foundation](https://signpath.org).
+
+RoDraw collects nothing and sends nothing. It has no network code at all —
+Qt's networking module is not even shipped in the build — so there is no
+privacy policy to give you.
+
 ## Licence
 
 Copyright (C) 2026 Ростислав Лозанов.
