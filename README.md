@@ -332,11 +332,23 @@ Copyright (C) 2026 Ростислав Лозанов.
 
 GPL-3.0-or-later. The full text is in [LICENSE](LICENSE).
 
-In short: use it, change it, pass it on, sell it if you like — but anything
-you hand to someone else that is built on this has to come with its source
-under the same terms. Nobody gets to take it closed.
+RoDraw is built on PyQt6, which is GPL-3.0 itself, so there was no real
+choice here: anything built on it and handed to other people carries the same
+terms.
 
-RoDraw is built on PyQt6, which is itself GPL-3.0.
+Use it, change it, pass it on. Whoever passes it on has to hand over the
+source with it under this same licence, which is the part that matters:
+**nobody can take RoDraw, close it up and sell a proprietary version of it.**
+No GPL licence lets an author forbid charging for a copy, and this one does
+not either — what it does is guarantee that whatever anyone charges for, the
+source travels with it and stays free for the next person.
+
+**The name and the marks are not covered by the licence.** "RoDraw", the
+brush icon and the portrait mark are mine. Fork the code if it is useful to
+you, but give your version its own name.
+
+RoDraw is free, and it stays free. If it has saved you an afternoon and you
+would like to send something back, donations are welcome — rosko437@gmail.com.
 
 ## Layout
 
