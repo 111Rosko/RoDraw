@@ -328,6 +328,8 @@ bright outline.
 
 ## Licence
 
+Copyright (C) 2026 Ростислав Лозанов.
+
 GPL-3.0-or-later. The full text is in [LICENSE](LICENSE).
 
 In short: use it, change it, pass it on, sell it if you like — but anything

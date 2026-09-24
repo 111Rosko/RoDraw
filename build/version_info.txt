@@ -14,11 +14,11 @@ VSVersionInfo(
     StringFileInfo([
       StringTable(
         '040904B0',
-        [StringStruct('CompanyName', 'RoDraw'),
+        [StringStruct('CompanyName', 'Ростислав Лозанов'),
          StringStruct('FileDescription', 'RoDraw - screen annotation for teaching'),
          StringStruct('FileVersion', '1.3.2.0'),
          StringStruct('InternalName', 'RoDraw'),
-         StringStruct('LegalCopyright', ''),
+         StringStruct('LegalCopyright', 'Copyright (C) 2026 Ростислав Лозанов. GPL-3.0-or-later.'),
          StringStruct('OriginalFilename', 'RoDraw.exe'),
          StringStruct('ProductName', 'RoDraw'),
          StringStruct('ProductVersion', '1.3.2.0')])

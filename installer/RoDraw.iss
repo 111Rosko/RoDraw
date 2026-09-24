@@ -1,4 +1,4 @@
-; Inno Setup script for RoDraw.
+﻿; Inno Setup script for RoDraw.
 ;
 ; Build the app first (build/build.ps1), then compile this with Inno Setup 6.
 ; Produces installer/Output/RoDraw-Setup-1.3.2.exe
@@ -9,7 +9,7 @@
 
 #define AppName       "RoDraw"
 #define AppVersion    "1.3.2"
-#define AppPublisher  "RoDraw"
+#define AppPublisher  "Ростислав Лозанов"
 #define AppExe        "RoDraw.exe"
 
 [Setup]
