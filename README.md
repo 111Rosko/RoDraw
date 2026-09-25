@@ -332,8 +332,15 @@ Built releases are on the
 [releases page](https://github.com/111Rosko/RoDraw/releases), produced by the
 GitHub Actions workflow in this repository from the source you can read here.
 
-Free code signing is provided by [SignPath.io](https://signpath.io),
-certificate by the [SignPath Foundation](https://signpath.org).
+**The downloads are not code-signed**, so Windows SmartScreen will say
+"Publisher: Unknown" and ask you to confirm through **More info -> Run
+anyway**. A certificate costs a few hundred euros a year, which is hard to
+justify for something given away free.
+
+Instead, every release is built in the open by the workflow in this
+repository, from the source you can read here, and the checksums are printed
+in the build log. That is weaker than a signature, but it is checkable, which
+"trust me" is not.
 
 RoDraw collects nothing and sends nothing. It has no network code at all —
 Qt's networking module is not even shipped in the build — so there is no
